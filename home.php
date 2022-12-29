@@ -50,7 +50,7 @@ if (isset ($_POST ['add']))
     <div class="page">
         <form method="post" action ="home.php">
         <?php
-        echo ="$smg";
+        echo $smg;
         ?>
             <table border="0" width="50%">
                 <tr>
