@@ -41,44 +41,7 @@ if (isset ($_POST ['add']))
         <meta name="description" content="home page">
         <meta name="keywords" content="my first name">
        <link href="./css/style.css" rel="stylesheet">
-<!--
-        <style>
 
-           body{
-                width: 100%;
-                background-color: #fff;
-                font-size: 30;
-            }
-            h1{
-                color:#0044cc ;
-            }
-            img{
-                padding: 10px 10px  10px  10px;
-            }
-            .login{
-                border: 5px dashed #0044cc;
-               width: 600px;
-               text-align:center;
-            }
-            .center{
-                text-align:center;
-            }
-            .label{
-                font-size: 30px;
-                color: crimson;
-            }
-                input[type=text],input[type=password]{
-                    width: 50%;
-                    height: 50px;
-                   
-                }
-                
-                input[type=submit]{
-                    width: 20%;
-                    height: 50px;
-                    background-color: rgb(240, 34, 34);
-        </style>
-    -->
         </head>
   <body>
    <div class="header">

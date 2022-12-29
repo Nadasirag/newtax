@@ -16,8 +16,7 @@ if (isset ($_POST ['login']))
         }
         else {
            echo" username and password are  not incorrect"; 
-      }
-            
+      }  
         } 
 
 ?>
