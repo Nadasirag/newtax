@@ -1,3 +1,26 @@
+<?php
+require "conn.php";
+if (isset ($_POST ['login']))
+{
+    $username = $_POST ["username"];
+    $password = $_POST ["password"];
+   $q="select count(1) as num_rows from users where user_name= ? and user_password=?";
+        $r=$conn->prepare($q);
+        $r->bind_param("ss",$username,$password);
+        $r->execute();
+        $rr=$r->get_result();
+        $row=$rr->fetch_assoc();
+       
+        if($row['num_rows'] > 0){
+            echo"<script>location.href='home.php';</script>";
+        }
+        else {
+           echo" username and password are  not incorrect"; 
+      }
+            
+        } 
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -57,7 +80,7 @@
     <center>    <h1 class="label"> login screen</h1>
    
     <img src="images.jpg" width ="110" height="110">
-    <form action="home.html">
+    <form  method ="post" action="index.php">
     <table class="login">
         <tr>
             <td class="label">username </td>

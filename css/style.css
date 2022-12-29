@@ -50,3 +50,9 @@ img{
     .right{
         width: 60px; ;
     }
+    .table{
+        border: 5px dashed #0044cc;
+        width: 600px;
+        text-align:center;
+     
+    }
