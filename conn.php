@@ -9,5 +9,6 @@ $conn = new mysqli($servername, $username, $password,$db);
 if ($conn->connect_errno) {
     die("error conection");
 }
+error_reporting(0);
 ?>
 
